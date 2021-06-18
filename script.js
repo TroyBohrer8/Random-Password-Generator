@@ -51,18 +51,15 @@ function generatePassword() {
     return
   }
 
-   // array way
-  var result = ""; // string way
+  var result = " "; 
 
   for (var i = 0; i < options.length; i++) {
     
-    var randomNumber = passwordItemsList.charAt(Math.floor(Math.random() * options.choices.length));
-     // array way
-    result += randomNumber; // string way
+    var randomPassword = options.choices.charAt(Math.floor(Math.random() * options.choices.length));
+  
+    result += randomPassword; 
   }
-
-   // array way
-  return result.join; // string way
+  return result;
 }
 
 function writePassword() {
